@@ -57,8 +57,9 @@ public class LoginService {
 			break;
 		case "post":
 			if(user!=null) {
-				String postContent = sc.nextLine();
-				user.postContent(postContent);
+				
+				
+				user.postContent(nextInput.split("~")[1]);
 			}
 			else {
 				System.out.println("Please Login");

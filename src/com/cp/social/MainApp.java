@@ -12,7 +12,7 @@ public class MainApp {
 		String nextInput = null;
 		while (sc.hasNext()) {
 
-			nextInput = sc.next();
+			nextInput = sc.nextLine();
 
 			LoginService.handleUserInput(nextInput,sc);
 		}
